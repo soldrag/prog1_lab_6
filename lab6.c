@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-#include <stdbool.h>
 
 int res_sum (int i0, int lim_i, int a, int formula)
 {
