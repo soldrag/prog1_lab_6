@@ -11,8 +11,9 @@ void print_array(float *array, int size_of_array)
 
 float *get_array(int size_of_array)
 {
-    float* array;
+    float *array;
     array = (float*)malloc(size_of_array * sizeof(float));
+    printf("Input array numbers:\n");
     for (int i=0; i<size_of_array; i++)
         scanf("%f", &array[i]);
     return array;
@@ -29,6 +30,7 @@ void max_array(float *array1, float *array2, int size_of_array)
 int main()
 {
     int size_of_array;
+    printf("Input count of numbers in array: ");
     scanf("%d", &size_of_array);
     float *arr1 = get_array(size_of_array);
     float *arr2 = get_array(size_of_array);
